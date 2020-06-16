@@ -12,3 +12,31 @@ iframe {
   width: 100%;
   height: 50vh;
 }
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card .lvl {
+  background: #333;
+  padding: 25px 30px;
+  border-radius: 50%;
+  border: 4px solid #783048;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 5;
+}
+
+.card .tri {
+  /* background: #783048; */
+  background: #783048;
+  padding: 100px;
+  position: absolute;
+  top: -125px;
+  left: -125px;
+  transform: rotateZ(45deg);
+  z-index: 2;
+
+}

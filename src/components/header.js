@@ -27,7 +27,7 @@ function Header() {
 
   return (
     <header>
-      <div className="nav">
+      <div className="nav nav-dark">
         <h1 className="logo m-1">
           <Link to="/"><img src={logo} alt="Website Logo"/></Link>
         </h1>

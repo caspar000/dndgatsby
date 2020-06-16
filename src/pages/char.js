@@ -9,10 +9,12 @@ const char = ({data}) => {
   ))
 
   const charList = data.allMarkdownRemark.edges.map((char, index) => (
-   <Link to={char.node.frontmatter.path} className="card" key={char.node.id}>
+   <Link to={char.node.frontmatter.path} className="card shadow" key={char.node.id}>
      {imageList[index]}
      <h1>{char.node.frontmatter.name}</h1>
      <span>{char.node.frontmatter.class}</span>
+     <div className="lvl">2</div>
+     <div className="tri"/>
    </Link>      
   ))
 
