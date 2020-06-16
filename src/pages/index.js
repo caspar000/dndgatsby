@@ -1,22 +1,34 @@
 import React from "react"
-import { Link } from "gatsby"
+import Img from "gatsby-image"
+import {graphql, useStaticQuery} from 'gatsby'
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+function IndexPage () {
+  const data = useStaticQuery(graphql`
+    query Image {
+      image: file(relativePath : {eq: "anon.jpg"}) {
+        id
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <h1>14 June 2020, Dungeons & Dragons - Session 1</h1>
+      <h2>Time: 3PM, Location: The Sacred Room</h2>
+      <Img fluid={data.image.childImageSharp.fluid} alt="The Sacred Room"/>
+      <p>Yes, indeed. It is called Dlab, where the transitory lands of the Lords of Cinder converge. In venturing north, the pilgrims discover the truth of the old words: The fire fades and the lords go without thrones." When the link of the fire is threatened, the bell tolls, unearthing the old Lords of Cinders from their graves...</p>
+    </Layout>
+  )
+}
+
 
 export default IndexPage

@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-dnd",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Dungeons & Dragons site for the campaign of Germandia",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Vanir",
   "dependencies": {
     "gatsby": "^2.22.15",
     "gatsby-image": "^2.4.5",
@@ -12,6 +12,7 @@
     "gatsby-plugin-react-helmet": "^3.3.2",
     "gatsby-plugin-sharp": "^2.6.9",
     "gatsby-source-filesystem": "^2.3.8",
+    "gatsby-transformer-remark": "^2.8.15",
     "gatsby-transformer-sharp": "^2.5.3",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
@@ -22,7 +23,7 @@
     "prettier": "2.0.5"
   },
   "keywords": [
-    "gatsby"
+    "Dungeons & Dragons"
   ],
   "license": "MIT",
   "scripts": {
