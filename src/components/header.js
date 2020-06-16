@@ -1,29 +1,47 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
+import Img from 'gatsby-image'
+import {graphql, useStaticQuery} from 'gatsby'
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header>
-    <div className="nav nav-dark">
-      <h1 className="logo">
-        D&D
-      </h1>
-      <div className="nav-container">
-        <Link to="/" className="nav-links">Home</Link>
-        <Link to="/logs" className="nav-links">Logs</Link>
-        <Link to="/char" className="nav-links">Char</Link>
-        <Link to="/maps" className="nav-links">Maps</Link>
+import logo from "../images/logo.svg"
+
+function Header() {
+  const data = useStaticQuery(graphql`
+    query Icons {
+      icons: allFile(filter: {relativeDirectory: {eq: "icons"}}) {
+        nodes {
+          id
+          childImageSharp {
+            fixed(width: 30) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const icons = data.icons.nodes.map(icon => (
+    <Img fixed={icon.childImageSharp.fixed} alt={icon.id} key={icon.id} />
+  ))
+
+  return (
+    <header>
+      <div className="nav">
+        <h1 className="logo m-1">
+          <Link to="/"><img src={logo} alt="Website Logo"/></Link>
+        </h1>
+        <div className="nav-container">
+          <Link to="/" className="nav-links">{icons[0]}<br/>Home</Link>
+          <Link to="/logs" className="nav-links">{icons[1]}<br/>Logs</Link>
+          <Link to="/wiki" className="nav-links">{icons[2]}<br/>Wiki</Link>
+          <Link to="/char" className="nav-links">{icons[3]}<br/>Char</Link>
+          <Link to="/maps" className="nav-links">{icons[5]}<br/>Maps</Link>
+        </div>
       </div>
-    </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+    </header>
+  )
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

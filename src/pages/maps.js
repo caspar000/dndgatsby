@@ -22,7 +22,7 @@ function Maps() {
 
   return (
     <Layout>
-      <div className="maps">
+      <div className="grid maps">
         {data.images.nodes.map((image) => (
           <div className="m-1" key={image.id}>
             <Img  fluid={image.childImageSharp.fluid} alt={image.id}/>

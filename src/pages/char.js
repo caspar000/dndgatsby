@@ -4,23 +4,21 @@ import Img from 'gatsby-image'
 import Layout from "../components/layout"
 
 const char = ({data}) => {
-  console.log(data);
-
   const imageList = data.img.nodes.map(img => (
      <Img fluid={img.childImageSharp.fluid} alt={img.id} key={img.id} />
   ))
 
   const charList = data.allMarkdownRemark.edges.map((char, index) => (
    <Link to={char.node.frontmatter.path} className="card" key={char.node.id}>
-     <h1>{char.node.frontmatter.name}</h1>
      {imageList[index]}
+     <h1>{char.node.frontmatter.name}</h1>
      <span>{char.node.frontmatter.class}</span>
    </Link>      
   ))
 
   return (
     <Layout>
-      <div className="chars">
+      <div className="grid p-1">
         {charList}
       </div>
     </Layout>

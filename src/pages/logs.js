@@ -7,7 +7,7 @@ const logs = ({data}) => {
     <Layout>
       <div>
         <h1>Logs</h1>
-        {data.allMarkdownRemark.edges.map(log => (
+        {data.allMarkdownRemark.edges.slice(0).reverse().map(log => (
           <div key={log.node.id}>
             <h3>{log.node.frontmatter.title}</h3>
             <small>{log.node.frontmatter.date}</small>
