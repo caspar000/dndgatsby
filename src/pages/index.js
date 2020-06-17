@@ -35,7 +35,7 @@ function IndexPage () {
         <br/>
         <p>
           The rutted track emerges from a wooded hillside, and you
-          catch your first glimpse of Phandalin. The town consists of
+          catch your first glimpse of Tao. The town consists of
           forty or fifty simple log buildings, some built on old fieldstone
           foundations. More old ruins-crumbling stone walls covered
           in ivy and briars-surround the newer houses and shops,

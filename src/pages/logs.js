@@ -9,11 +9,12 @@ const logs = ({data}) => {
         <h1>Logs</h1>
         {data.allMarkdownRemark.edges.slice(0).reverse().map(log => (
           <div key={log.node.id}>
+            <hr/>
             <h3>{log.node.frontmatter.title}</h3>
             <small>{log.node.frontmatter.date}</small>
             <br/><br/>
             <Link to={log.node.frontmatter.path}>Read More</Link>
-            <br/><br/><hr/>
+            <br/><br/>
           </div>
         ))}
       </div>
