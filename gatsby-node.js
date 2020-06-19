@@ -5,6 +5,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
 
   const logTemplate = path.resolve('src/templates/log-temp.js')
   const charTemplate = path.resolve('src/templates/char-temp.js')
+  const wikiTemplate = path.resolve('src/templates/wiki-temp.js')
   
   return graphql(`
     {
@@ -38,6 +39,20 @@ exports.createPages = ({boundActionCreators, graphql}) => {
           }
         }
       }
+      wiki: allMarkdownRemark(
+        filter: {fileAbsolutePath: {regex: "/(wiki)/"}}
+      ) {
+        edges {
+          node {
+            html
+            id
+            frontmatter {
+              path
+              title
+            }
+          }
+        }
+      }
     }
   `).then(res => {
     if(res.errors) {
@@ -48,6 +63,12 @@ exports.createPages = ({boundActionCreators, graphql}) => {
       createPage({
         path: node.frontmatter.path,
         component: logTemplate
+      })
+    }) 
+    res.data.wiki.edges.forEach(({node}) => {
+      createPage({
+        path: node.frontmatter.path,
+        component: wikiTemplate
       })
     }) 
     res.data.char.edges.forEach(({node}) => {

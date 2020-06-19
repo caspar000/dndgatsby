@@ -1,0 +1,35 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.8rem;
+  
+  @include mQ(1000px){
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.6rem;
+  }
+  @include mQ(800px){
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.2rem;
+  }
+  @include mQ(500px){
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.8rem;
+  }
+}
+
+.wiki {
+  grid-template-columns: 1fr 4fr;
+  @include mQ(992px) {
+    grid-template-columns: 1fr;
+    .sidebar {
+      min-height: auto;
+      div {
+        display: inline;
+        a {
+          display: inline-block;
+        }
+      }
+    }
+
+  }
+}

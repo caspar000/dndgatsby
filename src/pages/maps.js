@@ -6,11 +6,14 @@ import Layout from "../components/layout"
 function Maps() {
   const data = useStaticQuery(graphql`
     query Images {
-      images: allFile(filter: {relativeDirectory: {eq: "maps"}}) {
+      images: allFile(
+        filter: {relativeDirectory: {eq: "maps"}},
+        sort: {fields: name}
+        ) {
         nodes {
           id
           childImageSharp {
-            fluid {
+            fluid (maxWidth: 1400, quality: 100){
               ...GatsbyImageSharpFluid
             }
           }
@@ -18,7 +21,6 @@ function Maps() {
       }
     }
   `)
-  console.log(data)
 
   return (
     <Layout>

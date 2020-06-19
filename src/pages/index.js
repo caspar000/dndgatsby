@@ -3,6 +3,11 @@ import Img from "gatsby-image"
 import {graphql, useStaticQuery} from 'gatsby'
 
 import Layout from "../components/layout"
+import {setConfig} from 'react-hot-loader'
+
+setConfig({
+  showReactDomPatchNotification: false
+})
 
 function IndexPage () {
   const data = useStaticQuery(graphql`
@@ -10,7 +15,7 @@ function IndexPage () {
       image2: file(relativePath : {eq: "anon2.jpg"}) {
         id
         childImageSharp {
-          fluid(quality: 100) {
+          fluid(maxWidth: 1400, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -18,7 +23,7 @@ function IndexPage () {
       image: file(relativePath : {eq: "anon.jpg"}) {
         id
         childImageSharp {
-          fluid(quality: 100) {
+          fluid(maxWidth: 1400, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }

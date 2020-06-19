@@ -1,0 +1,58 @@
+.nav {
+  width: 100%;
+  // padding: .6rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  box-sizing: border-box;
+
+  background: $maincolor;
+  color:     silver;
+}
+
+.logo {
+  max-width:  4.6rem;
+  max-height: 4.6rem;
+}
+
+.nav-dark {
+  background: #333;
+  color:      silver;
+}
+
+.nav-container{
+  text-align: center;
+  
+  display: grid;
+}
+
+.nav-links{
+  min-width: 3rem;
+  padding: 1.2rem;
+  text-decoration: none;
+  
+  color: silver;
+  &:hover {
+    background: lighten($maincolor, 6);
+  }
+}
+
+@include mQ(576px) {
+  .nav-container {
+    grid-template-columns: repeat(($navgridalt), 1fr);
+  }
+}
+@include mQ(768px) {
+  .logo {
+    display: none;
+  }
+  .nav {
+    grid-template-columns: 1fr;
+  }
+}
+@include mQ(0, 576px) {
+  .nav-container {
+    grid-template-columns: repeat($navgrid, 1fr);
+  }
+}

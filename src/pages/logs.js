@@ -23,7 +23,7 @@ const logs = ({data}) => {
 }
 
 export const pageQuaery = graphql`
-  query BlogIndexQuery {
+  query LogIndexQuery {
     allMarkdownRemark (
       filter: {fileAbsolutePath: {regex: "/(log)/"}}
     ) {

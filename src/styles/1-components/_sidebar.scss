@@ -1,0 +1,15 @@
+.sidebar {
+  background: #333;
+  min-height: 89.4vh;
+  overflow-y: scroll;
+  
+  a {
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    color: white;
+    &:hover {
+      background: lighten(#333, 6)
+    }
+  }
+}

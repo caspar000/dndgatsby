@@ -1,0 +1,28 @@
+.container {
+  margin-right:  auto;
+  margin-left:   auto;
+  margin-top:    1.2rem;
+  margin-bottom: 1.2rem;
+
+  padding-right: 10px;
+  padding-left:  10px;
+
+  background: $foreground;
+  border: 1px solid $accent;
+
+  @include mQ(576px) {
+    max-width: 100%;
+  }
+  @include mQ(0, 576px) {
+    max-width: 540px;
+  }
+  @include mQ(0, 768px) {
+    max-width: 720px;
+  }
+  @include mQ(0, 992px) {
+    max-width: 960px;
+  }
+  @include mQ(0, 1200px) {
+    max-width: 1140px;
+  }
+}
