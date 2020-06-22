@@ -11,7 +11,7 @@ const logs = () => {
         <div className="container shadow">
           <h1>Logs</h1>
           <p>Check out the Sidebar for the latest session logs.</p>
-          <p>If you wish to contribute to the logs, you can write them in markdown format or edit them on <a href="https://github.com/caspar000/dndgatsby/tree/master/src/content/log">Github</a></p>
+          <p>If you wish to contribute to the logs, you can write them in markdown format or edit them on <a href="https://github.com/caspar000/dndgatsby/tree/master/src/content/logss">Github</a></p>
           
         </div>
       </main>
