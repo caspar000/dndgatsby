@@ -17,19 +17,47 @@
   }
 }
 
+.gr-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @include mQ(800px){
+    grid-template-columns: 1fr;
+  }
+  
+}
+
 .wiki {
   grid-template-columns: 1fr 4fr;
+  grid-gap: 0;
   @include mQ(992px) {
     grid-template-columns: 1fr;
+    a {
+      display: inline-block;
+    }
     .sidebar {
+      white-space: nowrap;
       min-height: auto;
+      max-height: 4rem;
+      overflow-x: scroll;
+      overflow-y: hidden;
       div {
         display: inline;
-        a {
-          display: inline-block;
-        }
       }
     }
-
   }
+}
+
+.maps {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 992px) {
+  .maps{
+    grid-template-columns: 1fr;
+  }
+}
+
+iframe {
+  width: 100%;
+  height: 50vh;
 }

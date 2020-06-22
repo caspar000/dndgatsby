@@ -1,8 +1,9 @@
 ---
-path:  "/char/badri"
-name:  "Badri"
-class: "Artificer"
 id: 3
+path:  '/char/badri'
+name:  'Badri'
+class: 'Artificer'
+image: ./badri.jpg
 ---
 
 # ბადრი ვარენის ძე ხიზაბავრელი „მემელიზმე“ ცქრიალაძე

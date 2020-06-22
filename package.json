@@ -5,8 +5,10 @@
   "version": "0.1.0",
   "author": "Vanir",
   "dependencies": {
+    "@hot-loader/react-dom": "^16.12.0",
     "gatsby": "^2.22.15",
     "gatsby-image": "^2.4.5",
+    "gatsby-plugin-catch-links": "^2.3.5",
     "gatsby-plugin-manifest": "^2.4.9",
     "gatsby-plugin-offline": "^3.2.7",
     "gatsby-plugin-react-helmet": "^3.3.2",
@@ -15,12 +17,12 @@
     "gatsby-source-filesystem": "^2.3.8",
     "gatsby-transformer-remark": "^2.8.15",
     "gatsby-transformer-sharp": "^2.5.3",
+    "materialize-css": "^1.0.0-rc.2",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
-    "react-hot-loader": "4.12.21",
-    "@hot-loader/react-dom": "^16.12.0",
-    "react-helmet": "^6.0.0"
+    "react-helmet": "^6.0.0",
+    "react-hot-loader": "4.12.21"
   },
   "devDependencies": {
     "prettier": "2.0.5"

@@ -1,44 +1,22 @@
 import React from 'react'
-import {Link} from 'gatsby'
-import Layout from "../components/layout"
 
-const logs = ({data}) => {
+import LogSidebar from '../components/logSidebar'
+import SidebarLayout from '../components/sidebarLayout'
+
+const logs = () => {
   return (
-    <Layout>
-      <div>
-        <h1>Logs</h1>
-        {data.allMarkdownRemark.edges.slice(0).reverse().map(log => (
-          <div key={log.node.id}>
-            <hr/>
-            <h3>{log.node.frontmatter.title}</h3>
-            <small>{log.node.frontmatter.date}</small>
-            <br/><br/>
-            <Link to={log.node.frontmatter.path}>Read More</Link>
-            <br/><br/>
-          </div>
-        ))}
-      </div>
-    </Layout>
+    <SidebarLayout>
+      <LogSidebar />
+      <main>
+        <div className="container shadow">
+          <h1>Logs</h1>
+          <p>Check out the Sidebar for the latest session logs.</p>
+          <p>If you wish to contribute to the logs, you can write them in markdown format or edit them on <a href="https://github.com/caspar000/dndgatsby/tree/master/src/content/log">Github</a></p>
+          
+        </div>
+      </main>
+    </SidebarLayout>
   )
 }
-
-export const pageQuaery = graphql`
-  query LogIndexQuery {
-    allMarkdownRemark (
-      filter: {fileAbsolutePath: {regex: "/(log)/"}}
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            path
-            title
-            date
-          }
-        }
-      }
-    }
-  }
-`
 
 export default logs

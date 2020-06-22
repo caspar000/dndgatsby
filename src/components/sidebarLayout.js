@@ -4,19 +4,19 @@ import PropTypes from "prop-types"
 import Header from "./header"
 import "../styles/main.scss"
 
-const Layout = ({ children }) => {
+const sidebarLayout = ({ children }) => {
   return (
     <>
       <Header/>
-      <div>
-        <main className="container shadow font-bask">{children}</main>
+      <div className="grid wiki">
+          {children}
       </div>
     </>
   )
 }
 
-Layout.propTypes = {
+sidebarLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default sidebarLayout

@@ -5,7 +5,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
 
   const logTemplate = path.resolve('src/templates/log-temp.js')
   const charTemplate = path.resolve('src/templates/char-temp.js')
-  const wikiTemplate = path.resolve('src/templates/wiki-temp.js')
+  const loreTemplate = path.resolve('src/templates/lore-temp.js')
   
   return graphql(`
     {
@@ -25,7 +25,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
         }
       }
       log: allMarkdownRemark(
-        filter: {fileAbsolutePath: {regex: "/(log)/"}}
+        filter: {fileAbsolutePath: {regex: "/(logs)/"}}
       ) {
         edges {
           node {
@@ -40,7 +40,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
         }
       }
       wiki: allMarkdownRemark(
-        filter: {fileAbsolutePath: {regex: "/(wiki)/"}}
+        filter: {fileAbsolutePath: {regex: "/(lore)/"}}
       ) {
         edges {
           node {
@@ -68,7 +68,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
     res.data.wiki.edges.forEach(({node}) => {
       createPage({
         path: node.frontmatter.path,
-        component: wikiTemplate
+        component: loreTemplate
       })
     }) 
     res.data.char.edges.forEach(({node}) => {

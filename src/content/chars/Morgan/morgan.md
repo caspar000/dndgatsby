@@ -1,8 +1,9 @@
 ---
-path:  "/char/morgan"
-name:  "Morgan"
-class: "Rogue"
 id: 4
+path:  '/char/morgan'
+name:  'Morgan'
+class: 'Rogue'
+image: ./morgan.jpg
 ---
 
 # მორგანი

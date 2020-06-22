@@ -26,3 +26,21 @@
     max-width: 1140px;
   }
 }
+
+.tags {
+  display: flex;
+  flex: wrap;
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  span {
+    border: 1px solid $accent;
+    background: $accent;
+    padding: 2px;
+    color: white;
+    margin-right: 5px;
+  }
+}

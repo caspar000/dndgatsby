@@ -1,20 +1,25 @@
 import React from 'react'
 import {Link, graphql} from 'gatsby'
-import Layout from "../components/layout"
+
+import LogSidebar from '../components/logSidebar'
+import SidebarLayout from '../components/sidebarLayout'
 
 export default function Template({data}) {
   const log = data.markdownRemark
 
   return (
-    <Layout>
-      <div>
-        <Link to="/logs">Go Back</Link>
-        <hr />
-        <h1>{log.frontmatter.title}</h1>
-        <h4>{log.frontmatter.date}</h4>
-        <div dangerouslySetInnerHTML={{__html: log.html}} />
-      </div>
-    </Layout>
+    <SidebarLayout>
+      <LogSidebar />
+      <main>
+        <div className="container shadow">
+          <Link to="/logs">Go Back</Link>
+          <hr />
+          <h1>{log.frontmatter.title}</h1>
+          <h4>{log.frontmatter.date}</h4>
+          <div dangerouslySetInnerHTML={{__html: log.html}} />
+        </div>
+      </main>
+    </SidebarLayout>
   )
 }
 

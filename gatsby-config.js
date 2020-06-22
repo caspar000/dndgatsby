@@ -9,22 +9,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `log`,
-        path: `${__dirname}/src/content/log`,
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `char`,
-        path: `${__dirname}/src/content/chars`,
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `wiki`,
-        path: `${__dirname}/src/content/wiki`,
+        name: `content`,
+        path: `${__dirname}/src/content`,
       }
     },
     {
@@ -34,6 +20,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       }
     },
+    `gatsby-plugin-catch-links`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

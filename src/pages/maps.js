@@ -13,7 +13,7 @@ function Maps() {
         nodes {
           id
           childImageSharp {
-            fluid (maxWidth: 1400, quality: 100){
+            fluid (maxWidth: 800, quality: 100){
               ...GatsbyImageSharpFluid
             }
           }

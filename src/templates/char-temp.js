@@ -25,7 +25,14 @@ export const postQuery = graphql`
       frontmatter{
         path
         name
-        class  
+        class
+        image {
+          childImageSharp{
+            fluid(maxWidth: 600){
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
