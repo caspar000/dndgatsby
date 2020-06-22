@@ -6,7 +6,7 @@ const Sidebar = () => {
     query Log{
       allMarkdownRemark (
         sort: {fields: [frontmatter___title], order: DESC},
-        filter: {fileAbsolutePath: {regex: "/(logs)/"}}
+        filter: {fileAbsolutePath: {regex: "/(logss)/"}}
       ) {
         edges {
           node {

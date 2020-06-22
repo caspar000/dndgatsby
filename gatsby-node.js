@@ -25,7 +25,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
         }
       }
       log: allMarkdownRemark(
-        filter: {fileAbsolutePath: {regex: "/(logs)/"}}
+        filter: {fileAbsolutePath: {regex: "/(logss)/"}}
       ) {
         edges {
           node {
