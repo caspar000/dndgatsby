@@ -2,9 +2,8 @@
 path:   '/lore/bergbrux'
 title:  'Region Capital Bergbrux'
 author: 'Vanir'
-# image:  ../../../images/wiki/bergbrux.jpg
 image:  ./bergbrux.jpg
-date:   '6/21/21'
+date:   '21/06/2020'
 tags: 
 - Town
 - Region Capital

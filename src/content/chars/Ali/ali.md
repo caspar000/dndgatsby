@@ -4,6 +4,7 @@ path:  '/char/ali'
 name:  'Ali'
 class: 'Wizard'
 image: ./ali.jpg
+date:  '12/06/2020'
 ---
 
 # ალი

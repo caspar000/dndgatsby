@@ -1,12 +1,12 @@
 ---
 path:  "/logs/session-1"
-date:  "June 14 2020"
+date:  "14/06/2020"
 title: "Session 1"
 ---
 
 ## Session 1
 
-The Beached Leviathan was unusually empty. Only a handful of tables were filled with people. The left corner
+<a href="/lore/port-of-lua">The Beached Leviathan</a> was unusually empty. Only a handful of tables were filled with people. The left corner
 table was occupied by the adventurers who haven't gathered here for at least two months... They were tired,
 broke, and hungry. The arrival of one *Gungren Rockseeker*, a lound and boisterious shield dwarf sporting a
 bushy beard that has been dyed a fiery red, has changed the mood. He arrived with a quiet and dignified male
@@ -21,8 +21,8 @@ jobs in the future, the nature of which he didn't disclose. The party accepted h
 set out on the road with the cart the next day, while Gungren and the knight named Sildar left the city the previous
 morning.
 
-When inspecting the cart, the stable owner Milo Goodbarrel, asked Nydian to send his regards to a woman named
-Qelline Alderleaf at the Alderleaf farm in the village Org. He did so, finding out more about the relationship 
+When inspecting the cart, the stable owner <a href="/lore/port-of-lua">Milo Goodbarrel</a>, asked Nydian to send his regards to a woman named
+<a href="/lore/village-org">Qelline Alderleaf</a> at the Alderleaf farm in the village Org. He did so, finding out more about the relationship 
 between these two and securing free lodging and food for the entire party. Germand has charmed Qelline with his
 pretty face and buldging muscles. Badri bought some Maionezi and put all of the cart supplies into the bag of holding
 that he previously crafted for such an occasion. Ralts tried to steal 5 silver coins from Morgan, awakening him

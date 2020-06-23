@@ -11,7 +11,7 @@ export default function Template({data}) {
     <SidebarLayout>
       <LogSidebar />
       <main>
-        <div className="container shadow">
+        <div className="container shadow" key={log.id}>
           <Link to="/logs">Go Back</Link>
           <hr />
           <h1>{log.frontmatter.title}</h1>

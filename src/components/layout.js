@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
     <>
       <Header/>
       <div>
-        <main className="container shadow font-bask">{children}</main>
+        <main className="font-bask">{children}</main>
       </div>
     </>
   )

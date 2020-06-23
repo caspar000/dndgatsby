@@ -1,6 +1,6 @@
 ---
 path:  "/logs/session-0"
-date:  "March 14 2020"
+date:  "14/03/2020"
 title: "Session 0"
 ---
 

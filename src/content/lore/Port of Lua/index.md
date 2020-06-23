@@ -3,7 +3,7 @@ path:   '/lore/port-of-lua'
 title:  'Port of Lua'
 author: 'Vanir'
 image:  ./portlua.jpg
-date:   '6/21/21'
+date:   '23/06/2020'
 tags: 
 - Town
 - Port
@@ -26,3 +26,8 @@ for thieves guild members, adventurers, and rogues. The weathered exterior of th
 magnificent interior decorated in fine oak and cherry woodwork. Old nautical lanterns and fishing nets 
 decorate the walls. These days, the tavern's owner, a retired pirate named Harrag, often leaves the management 
 of the bar to his "first mate", a human woman named Andrella.
+
+### Milo Goodbarrel's Stall
+
+Milo, a consummate salesperson and an affable halfling of some forty-eight years. He is happy to provide the adventurers
+with a discound at his stall for their friendly behavior with him.

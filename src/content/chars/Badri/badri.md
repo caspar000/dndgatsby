@@ -4,6 +4,7 @@ path:  '/char/badri'
 name:  'Badri'
 class: 'Artificer'
 image: ./badri.jpg
+date:  '12/06/2020'
 ---
 
 # ბადრი ვარენის ძე ხიზაბავრელი „მემელიზმე“ ცქრიალაძე

@@ -7,7 +7,7 @@ export default function Template({data}) {
 
   return (
     <Layout>
-      <div>
+      <div className="container shadow">
         <Link to="/char">Go Back</Link>
         <hr />
         <h1>{char.frontmatter.name}</h1>

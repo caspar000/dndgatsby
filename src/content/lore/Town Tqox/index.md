@@ -3,7 +3,7 @@ path:   '/lore/town-tqox'
 title:  'Town Tqox'
 author: 'Vanir'
 image:  ./towntqox.jpg
-date:   '6/21/21'
+date:   '21/06/2020'
 tags: 
 - Town
 - Arena

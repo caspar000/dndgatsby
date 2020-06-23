@@ -4,6 +4,7 @@ path:  '/char/morgan'
 name:  'Morgan'
 class: 'Rogue'
 image: ./morgan.jpg
+date:  '12/06/2020'
 ---
 
 # მორგანი

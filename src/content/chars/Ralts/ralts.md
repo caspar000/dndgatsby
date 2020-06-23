@@ -4,4 +4,5 @@ path:  '/char/ralts'
 name:  'Ralts'
 class: 'Rogue'
 image: ./ralts.jpg
+date:  '12/06/2020'
 ---

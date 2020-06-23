@@ -15,8 +15,8 @@ const char = ({data}) => {
   ))
 
   return (
-    <Layout className="container shadow">
-      <div className="grid p-1">
+    <Layout>
+      <div className="container shadow grid p-1">
         {charList}
       </div>
     </Layout>

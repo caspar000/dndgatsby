@@ -47,6 +47,20 @@
   }
 }
 
+.index-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 1.2rem;
+}
+@include mQ(992px) {
+  .index-grid{
+    grid-template-columns: 1fr;
+  }
+  .sidecontent {
+    display: none;
+  }
+}
+
 .maps {
   grid-template-columns: 1fr 1fr;
 }
