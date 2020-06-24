@@ -23,7 +23,7 @@ const Sidebar = () => {
 
   return (
     <>
-    <div className="sidebar shadow">
+    <div className="sidebar">
       {data.allMarkdownRemark.edges.map((log) => (
         <div key={log.node.id}>
           <Link to={log.node.frontmatter.path}>{log.node.frontmatter.title}</Link>

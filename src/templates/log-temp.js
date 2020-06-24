@@ -10,7 +10,7 @@ export default function Template({data}) {
   return (
     <SidebarLayout>
       <LogSidebar />
-      <main>
+      <main className="p-1">
         <div className="container shadow" key={log.id}>
           <Link to="/logs">Go Back</Link>
           <hr />

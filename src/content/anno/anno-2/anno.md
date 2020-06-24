@@ -4,7 +4,7 @@ title:  '28 June 2020, Dungeons & Dragons - Session 2'
 subtit: 'Time: 3PM, Location: Main Laboratory'
 author: 'Vanir'
 image:  ./anno2.jpg
-date:   '26/06/2020'
+date:   '23/06/2020'
 ---
 The rutted track emerges from a wooded hillside, and you
 catch your first glimpse of Tao. The town consists of

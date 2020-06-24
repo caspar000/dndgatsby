@@ -36,7 +36,7 @@ function Header() {
           <Link to="/logs" className="nav-links">{icons[1]}<br/>Logs</Link>
           <Link to="/lore" className="nav-links">{icons[2]}<br/>Lore</Link>
           <Link to="/char" className="nav-links">{icons[3]}<br/>Char</Link>
-          <Link to="/maps" className="nav-links">{icons[5]}<br/>Maps</Link>
+          <Link to="/maps" className="nav-links">{icons[4]}<br/>Maps</Link>
         </div>
       </div>
     </header>

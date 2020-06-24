@@ -12,7 +12,7 @@ export default function Template({data}) {
   return (
     <SidebarLayout>
       <Sidebar />
-      <main>
+      <main className="p-1">
         <div className="container shadow">
           <StaticQuery query={loreQuery} render={data => {
             return (

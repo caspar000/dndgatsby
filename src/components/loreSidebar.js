@@ -24,7 +24,7 @@ const Sidebar = () => {
 
   return (
     <>
-    <div className="sidebar shadow">
+    <div className="sidebar">
       {data.allMarkdownRemark.edges.map((wiki) => (
         <div key={wiki.node.id}>
           <Link to={wiki.node.frontmatter.path}>{wiki.node.frontmatter.title}</Link>

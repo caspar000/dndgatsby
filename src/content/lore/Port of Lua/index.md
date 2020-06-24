@@ -31,3 +31,16 @@ of the bar to his "first mate", a human woman named Andrella.
 
 Milo, a consummate salesperson and an affable halfling of some forty-eight years. He is happy to provide the adventurers
 with a discound at his stall for their friendly behavior with him.
+
+> ### Thieves Guild Records
+> #### Population
+> + Approximately 5900; mix of human, halfling, dwar, elf and half-elf.
+> #### Government
+> + Two factions struggle for control of the city, several wealthy  merchants and a court of aristocrats.
+> #### Notable Places
+> + The Guardhouse: A strong building of half-timbered walls, a station of of the town guard. It is rumored to be built atop a long-forgotten dungeon, now half-flooded and infested by monstrous vermin.
+> + The Dryad's Tree: A great tree stands here, gnarled with age but green and strong. It is said to be the home of a dryad, and that anyone who kisses the tree will be lucky for the rest of the day.
+> #### Notable Contacts
+> + Jane: Female Human Illusionist, Evil. Jane is exceptionally beautiful, with thick auburn hair and large blue eyes. She wears expensive clothing and wields a dagger. Jane is a skilled actor.
+> + Mary: Female Human Necromancer, Evil. Mary is thin, with curly golden hair and amber eyes. She wears dark robes and wields a short sword and dagger. Mary is haunted by the ghost of someone she killed.
+> + Sanzir: Male Dwarf Entertainer, Neutral. Sanzir is rough in appearance, with short golden hair and hazel eyes. He wears tailored clothing and a silver amulet. Sanzir seeks to atone for past sins.

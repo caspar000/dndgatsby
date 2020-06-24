@@ -1,9 +1,9 @@
 .card {
   color: #fff;
-  text-align: center;
+  text-align: start;
   text-decoration: none;
   background: #783048;
-  border: 5px solid #783048;
+  border: 5px solid darken($color: $accent, $amount: 6);
   border-radius: 8px;
   position: relative;
   overflow: hidden;
@@ -13,7 +13,9 @@
 }
 
 .card .lvl {
-  background: #333;
+  // background: #333;
+  background: rgb(51,51,51);
+  background: linear-gradient(330deg, rgba(55,55,55,1) 0%, rgba(0,0,0,1) 100%);
   padding: 25px 30px;
   border-radius: 50%;
   border: 5px solid #783048;
@@ -21,6 +23,10 @@
   top: 2px;
   left: 2px;
   z-index: 5;
+  div {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .card .tri {
@@ -32,4 +38,45 @@
   left: -125px;
   transform: rotateZ(45deg);
   z-index: 2;
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  border-top: 5px solid darken($color: $accent, $amount: 6);
+  padding-left: 15px;
+}
+
+.card span {
+  display: inline-block;
+  margin-bottom: 4px;
+  padding-left: 15px;
+}
+
+.card .sq1 {
+  background: $accent;
+  padding: 4px 55px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border-bottom-right-radius: 8px;
+}
+
+.card .sq2 {
+  background: $accent;
+  padding: 55px 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border-bottom-right-radius: 8px;
+}
+
+.card .icon {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  z-index: 5;
+  
 }

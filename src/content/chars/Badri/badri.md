@@ -4,6 +4,7 @@ path:  '/char/badri'
 name:  'Badri'
 class: 'Artificer'
 image: ./badri.jpg
+icon:  ./artificer.png
 date:  '12/06/2020'
 ---
 

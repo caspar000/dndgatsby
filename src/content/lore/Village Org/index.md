@@ -16,16 +16,16 @@ a lazy Halfling <a href="/lore/port-of-lua">Milo Goodbarrel</a> but decided to m
 leave Org and try his luck in Port of Lua where he has made a fortune by being a general salesperson. Quellines husband is now 
 deceased and she has already sent her kids to better parts of the world. Despite this, Milo and Qelline haven't been able to get
 together like the old days. Qelline is friendly towards the adventurers and will provide food and lodging any time they are in 
-this village.<br/><br/>
+this village.<br/>
 
-### Thieves Guild Records
-#### Population
-<li>Approximately 1800; mixed human, elf, halfling and half-elf.</li>
-
-#### Government
-<li>Org is governed by a noble aristocrat, the human lord Gilan. He has quite a wealthy house. Unfrotunately it's also quite well protected.</li>
-
-#### Notable Places
-<li>The Guildhall: A grand stone-walled building, once an inn house. It contains a large meeting hall and several smaller rooms, and is shared amongst several local merchant guilds.</li>
-<li>The Knave's Pub; A herioc dwarven tavern, which serves only gin.</li>
-<li>Maycey's Pottery: The workshp of a female human potter named Alin Maycey, who knows the secret of an alchemical clay which burns with a cold light.</li>
+> ### Thieves Guild Records
+> #### Population
+> + Approximately 1800; mixed human, elf, halfling and half-elf.
+>
+> #### Government
+> + Org is governed by a noble aristocrat, the human lord Gilan. He has quite a wealthy house. Unfrotunately it's also quite well protected.
+>
+> #### Notable Places
+> + The Guildhall: A grand stone-walled building, once an inn house. It contains a large meeting hall and several smaller rooms, and is shared amongst several local merchant guilds.
+> + The Knave's Pub; A herioc dwarven tavern, which serves only gin.
+> + Maycey's Pottery: The workshp of a female human potter named Alin Maycey, who knows the secret of an alchemical clay which burns with a cold light.

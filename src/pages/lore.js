@@ -8,7 +8,7 @@ const lore = () => {
     <SidebarLayout>
       <Sidebar />
       <main>
-        <div className="container shadow">
+        <div className="container shadow p-1">
           <h1>Lore</h1>
           <p>Welcome to the lore tab.</p>
           <p>Click any links from the sidebar to gain more insight about the world so you can do BIG BRAIN roleplaying!</p>
