@@ -3,12 +3,13 @@ import {Link, graphql} from 'gatsby'
 
 import LogSidebar from '../components/logSidebar'
 import SidebarLayout from '../components/sidebarLayout'
+import Layout from '../components/layout'
 
 export default function Template({data}) {
   const log = data.markdownRemark
 
   return (
-    <SidebarLayout>
+    <Layout>
       <LogSidebar />
       <main className="p-1">
         <div className="container shadow" key={log.id}>
@@ -19,7 +20,7 @@ export default function Template({data}) {
           <div dangerouslySetInnerHTML={{__html: log.html}} />
         </div>
       </main>
-    </SidebarLayout>
+    </Layout>
   )
 }
 

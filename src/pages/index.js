@@ -1,9 +1,10 @@
 import React from "react"
+import {setConfig} from 'react-hot-loader'
 import {graphql, StaticQuery} from 'gatsby'
 
-import Layout from "../components/layout"
-import {setConfig} from 'react-hot-loader'
+import SEO from '../components/seo'
 import Post from '../components/post'
+import Layout from '../components/layout'
 import IndexSidebar from '../components/indexSidebar'
 
 setConfig({
@@ -13,6 +14,7 @@ setConfig({
 function IndexPage () {
   return (
     <Layout>
+      <SEO title="Home" />
       <div className="container index-grid">
         <div>
           <StaticQuery query={indexQuery} render={data => {
@@ -43,7 +45,7 @@ function IndexPage () {
 const indexQuery = graphql`
   query index{
     allMarkdownRemark (
-      sort: {fields: [frontmatter___date], order: DESC},
+      sort: {fields: [frontmatter___id], order: DESC},
       filter: {fileAbsolutePath: {regex: "/(anno)/"}}
       limit: 2
     ) {

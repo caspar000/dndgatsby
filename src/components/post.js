@@ -14,7 +14,16 @@ const Post = ({ title, subtit, author, path, date, body, fluid, tags, html, id})
           <div dangerouslySetInnerHTML={{__html: html}} />
       </div>
     )
-    
+  }
+  if (fluid === undefined) {
+    return (
+      <div className="container" key={id + title}>
+          <h1>{title}</h1>
+          <h2>{subtit}</h2>
+          <h4>{date} by {author}</h4>
+          <div dangerouslySetInnerHTML={{__html: html}} />
+      </div>
+    )
   }
   return (
     <div key={id + title}>

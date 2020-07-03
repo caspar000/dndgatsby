@@ -17,11 +17,14 @@
     "gatsby-source-filesystem": "^2.3.8",
     "gatsby-transformer-remark": "^2.8.15",
     "gatsby-transformer-sharp": "^2.5.3",
+    "konva": "^7.0.2",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-helmet": "^6.0.0",
-    "react-hot-loader": "4.12.21"
+    "react-hot-loader": "4.12.21",
+    "react-konva": "^16.13.0-3",
+    "use-image": "^1.0.6"
   },
   "devDependencies": {
     "prettier": "2.0.5"

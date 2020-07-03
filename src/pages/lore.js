@@ -1,11 +1,14 @@
 import React from 'react'
 
+import SEO from '../components/seo'
 import Sidebar from '../components/loreSidebar'
 import SidebarLayout from '../components/sidebarLayout'
+import Layout from '../components/layout'
 
 const lore = () => {
   return (
-    <SidebarLayout>
+    <Layout>
+      <SEO title="Lore" />
       <Sidebar />
       <main>
         <div className="container shadow p-1">
@@ -14,7 +17,7 @@ const lore = () => {
           <p>Click any links from the sidebar to gain more insight about the world so you can do BIG BRAIN roleplaying!</p>
         </div>
       </main>
-    </SidebarLayout>
+    </Layout>
   )
 }
 

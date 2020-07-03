@@ -5,12 +5,13 @@ import { graphql, StaticQuery } from 'gatsby'
 import Sidebar from '../components/loreSidebar'
 import SidebarLayout from '../components/sidebarLayout'
 import Post from '../components/post'
+import Layout from '../components/layout'
 
 export default function Template({data}) {
   const lore = data.markdownRemark
 
   return (
-    <SidebarLayout>
+    <Layout>
       <Sidebar />
       <main className="p-1">
         <div className="container shadow">
@@ -28,7 +29,7 @@ export default function Template({data}) {
             )}}/>
         </div>
       </main>
-    </SidebarLayout>
+    </Layout>
   )
 }
 

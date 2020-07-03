@@ -1,7 +1,9 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import Img from 'gatsby-image'
-import Layout from "../components/layout"
+
+import SEO from '../components/seo'
+import Layout from '../components/layout'
 
 const char = ({data}) => {
   const charList = data.allMarkdownRemark.edges.map(char => (
@@ -19,6 +21,7 @@ const char = ({data}) => {
 
   return (
     <Layout>
+      <SEO title="Characters" />
       <div className="container shadow" style={{padding: '0'}}>
         <h1 className="banner">Player Characters</h1>
         <div className="grid p-1">

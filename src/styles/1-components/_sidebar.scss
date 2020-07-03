@@ -15,6 +15,61 @@
   }
 }
 
+.sidetab {
+  position: fixed;
+  color: white;
+  padding: 0;
+  width: 40px;
+  height: 100%;
+  background: #333;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  opacity: 0.8;
+  transition: all .6s;
+  .inside {
+    display: none;
+    overflow: hidden;
+    text-overflow: clip;
+    width: 20rem;
+  }
+  button {
+    margin-top: 5px;
+    display: none;
+    margin-left: auto;
+    background-color: #333;
+    max-height: 40px;
+    max-width: 40px;
+  }
+  a{
+    color: white;
+  }
+  &:hover, &:active {
+    width: 20rem;
+    padding: 0 20px;
+    opacity: 1;
+    .inside {
+      display: block;
+    }
+  }
+  @include mQ(576px){
+    width: 20px;
+    &:hover, &:active {
+      width: 16rem;
+    }
+  }
+}
+
+.active {
+  width: 20rem;
+  padding: 0 20px;
+  opacity: 1;
+  .inside {
+    display: block;
+  }
+}
+
 // @keyframes slide {
 //   0%   {width: 0}
 //   100% {width: 100%}
