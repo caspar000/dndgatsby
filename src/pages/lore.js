@@ -2,7 +2,6 @@ import React from 'react'
 
 import SEO from '../components/seo'
 import Sidebar from '../components/loreSidebar'
-import SidebarLayout from '../components/sidebarLayout'
 import Layout from '../components/layout'
 
 const lore = () => {

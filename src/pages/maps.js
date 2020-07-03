@@ -1,22 +1,20 @@
 import React from 'react'
 import Konva from 'konva'
-import {Stage, Layer} from 'react-konva'
-import Img from 'gatsby-image'
-import {graphql, useStaticQuery} from 'gatsby'
+import {Stage} from 'react-konva'
 
 import MapJpg from '../images/maps/04.jpg'
 
 import SEO from '../components/seo'
 import Layout from "../components/layout"
 
+
 class Maps extends React.Component {
   state = {
-    sidebar: 'none'
+    sidebar: 'none',
   }
   componentDidMount() {
     var stage = this.stageRef;
     var layer = new Konva.Layer();
-
     stage.add(layer)
 
     var imageObj = new Image();
@@ -72,9 +70,9 @@ class Maps extends React.Component {
   }
 
   render() {
-    var width = window.innerWidth;
-    var height = window.innerHeight - 100;
-
+    const windowGlobal =  typeof window !== 'undefined' && window;
+    const width = windowGlobal.innerWidth;
+    const height = windowGlobal.innerHeight - 100;
     return (
       <Layout>
         <SEO title="Maps" />

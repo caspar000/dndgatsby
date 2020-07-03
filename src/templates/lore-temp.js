@@ -3,7 +3,6 @@ import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 
 import Sidebar from '../components/loreSidebar'
-import SidebarLayout from '../components/sidebarLayout'
 import Post from '../components/post'
 import Layout from '../components/layout'
 
